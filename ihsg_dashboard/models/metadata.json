@@ -1,0 +1,52 @@
+{
+  "trained_on": "2026-06-29",
+  "train_period": "2024-12-31",
+  "val_period": "2025-03-31",
+  "n_features": 22,
+  "features": [
+    "STI_ret_lag2",
+    "EM_stress_score_lag8",
+    "OIL_WTI_ret_lag10",
+    "EM_stress_score_lag6",
+    "VIX_above25_lag9",
+    "RI_commodity_basket_lag10",
+    "EM_stress_score_lag10",
+    "MSCI_EM_ret_lag2",
+    "SHANGHAI_ret_lag2",
+    "EM_stress_score_lag7",
+    "FTSE_ret_lag6",
+    "IHSG_NIKKEI_corr20_lag10",
+    "IHSG_above_EMA50_lag1",
+    "IHSG_above_EMA50_lag6",
+    "IHSG_NIKKEI_corr20_lag9",
+    "USDIDR_ret_lag3",
+    "OIL_WTI_ret_lag1",
+    "VIX_spike_lag10",
+    "EMA20_above_EMA50_lag6",
+    "IHSG_mom_10d_lag4",
+    "MACD_line_lag1",
+    "IHSG_mom_5d_lag10"
+  ],
+  "best_params": {
+    "Logistic Regression": {
+      "C": "0.01",
+      "penalty": "l2"
+    },
+    "Random Forest": {
+      "max_depth": "3",
+      "min_samples_leaf": "5"
+    },
+    "ANN (MLP)": {
+      "alpha": "0.01",
+      "hidden_layer_sizes": "(32, 16)"
+    }
+  },
+  "best_thresholds": {
+    "Logistic Regression": 0.32,
+    "Random Forest": 0.46,
+    "ANN (MLP)": 0.3
+  },
+  "train_obs": 452,
+  "val_obs": 63,
+  "test_obs": 310
+}
